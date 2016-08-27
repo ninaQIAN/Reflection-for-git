@@ -1,0 +1,4 @@
+When would you want to use a remote repository rather than keeping all your work local?
+  When local storage is not enough for building a big project or I want to replace my old computer and buy a new personal computer; 
+  When I need to use another computer to access my project and work on it; 
+  When I want to share my project with other friends.
