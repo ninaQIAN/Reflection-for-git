@@ -1,0 +1,52 @@
+When to commit?
+
+	A good rule of thumb is to make one commit per logical change. When choosing whether to commit, just keep in mind that each commit should have one clear, logical purpose, and you should never do too much work without committing.
+
+git checkout
+	resetting all of your files to how they were at the time your files were made.
+	checkout commit to see when a bug was introduced.
+
+
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    By comparing two versions of a file, I can find small bugs like typos easier introduced by accident, because small bugs are not very obvious and people sometimes makes typo unawarely.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    Having easy access to the historic file records helps people to find out who and what has been made in a certain version of the file so that we can choose to revert to which version if needed. If a bug comes in, we can easily find who to talk to fix it quickly. Besides, when a programmer modifies something, he can refer to the history of that file and refer to its historic modification records. 
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    Manually choosing when to create a commit:
+    pros: people has the option of choosing the right time to commit. Unwanted commit will not be introduced. Each commit represents a version of modification for certain logical purpose, people can always come back to that commit whenever he wants. Commit contains detailed information like author and message so that people can easily get the purpose of that commit when needed.
+    cons: need to decide what to commit and not to commit manually, which costs time and energy.
+
+    Having versions automatically saved:
+    pros: simple, easy and fast. Don't need to pay attention to think/determine which to be saved. 
+    cons: cannot keep track of historic versions of modification. If someone wants to get back a function he just removed and his code is saved automatically, he needs to rewrite that part of code since there's no place to find it back. After a period of time, new programmer who starts working on that file cannot find previous modifications info, so he needs to read the document again. If a bug comes, it is difficult to determine who to ask for quick fix.
+
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    If a finished feature involves several files, it it better to commit them altogether since they are related and have the same purpose. Saving mutiple files in one commit results in one version of modification so that if people want to remove this feature, he can just remove this commit. 
+    Saving multiple files separately costs more time and people cannot know if a feature involves several files' changes or not. It is very difficult and less effective to remove a feature that people don't need.
+
+How can you use the commands git log and git diff to view the history of files?
+
+    "git log" to see logs.
+    "git diff <old commit> <new commit>" to compare old commit and new commit. in the list of commit logs, the lower is older (Date), and the upper is newer.
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    It makes easier to find out in which commit a bug is introduced as commits are separated, if a commit introduces the bug, its previous commit will not. Besides, version control helps compare each commit so that difference can be identified obviously.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    edit and commit changes
+	
